@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>海邊走走 ｜ 會計小幫手 徵才中</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        hiwalk: {
+                            blue: `#00AEEF`,
+                            darkBlue: `#0085FF`,
+                            sand: `#F5F5F0`,
+                            text: `#202020`
+                        }
+                    },
+                    fontFamily: {
+                        sans: [`Poppins`, `Noto Sans TC`, `sans-serif`],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FFFFFF;
+            color: #202020;
+            overflow-x: hidden;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #0085FF 0%, #00AEEF 100%);
+            position: relative;
+            overflow: hidden;
+            box-shadow: inset 0 -20px 40px rgba(0,0,0,0.05);
+        }
+        
+        .wave-bg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url(`image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='1' d='M0,192L48,197.3C96,203,192,213,288,192C384,171,480,117,576,112C672,107,768,149,864,181.3C960,213,1056,235,1152,213.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E`);
+            background-size: cover;
+        }
+
+        .cta-button {
+            background: #FFFFFF;
+            color: #00AEEF;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #F0F9FF;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-shadow {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 174, 239, 0.1);
+        }
+
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .kuse-branding {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 20px;
+            color: #9C9C9C;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .kuse-branding:hover {
+            color: #202020;
+        }
+
+        .kuse-branding svg {
+            height: 1.2em;
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <!-- Hero Section -->
+    <header class="hero-gradient pt-16 pb-24 px-6 text-center">
+        <div class="max-w-md mx-auto relative z-10">
+            <div class="inline-block px-4 py-1 bg-white/20 backdrop-blur-md rounded-full text-white text-sm font-bold mb-4 tracking-widest border border-white/30">
+                HIWALK RECRUITING
+            </div>
+            <h1 class="text-3xl md:text-4xl font-black text-white mb-2 leading-tight drop-shadow-lg">
+                海邊走走 ｜ 會計小幫手
+            </h1>
+            <div class="h-1.5 w-20 bg-white mx-auto mb-6 rounded-full shadow-sm"></div>
+            <p class="text-xl md:text-2xl font-black text-white mb-4 drop-shadow-md">
+                為什麼可以邊旅行邊賺錢？
+            </p>
+            <p class="text-white font-bold text-lg leading-relaxed mb-8 drop-shadow-sm">
+                100% 在家工作，免通勤、不打卡。<br>
+                只要有電腦，全台灣都是你的辦公室。 ✈️
+            </p>
+            
+            <a href="https://lin.ee/9J4WP2T" class="cta-button inline-block font-black py-4 px-8 rounded-full text-lg w-full max-w-xs uppercase tracking-wider">
+                ❯ 我想試試！立即申請
+            </a>
+        </div>
+        <div class="wave-bg"></div>
+    </header>
+
+    <!-- Core Message -->
+    <section class="py-12 px-6 bg-white text-center">
+        <div class="max-w-md mx-auto">
+            <h2 class="text-2xl font-bold text-hiwalk-blue mb-3">
+                時段由你安排
+            </h2>
+            <p class="text-hiwalk-text text-lg font-medium">
+                生活節奏由你掌握
+            </p>
+        </div>
+    </section>
+
+    <!-- Task Items -->
+    <section class="py-8 px-6 bg-hiwalk-sand/50">
+        <div class="max-w-md mx-auto grid gap-4">
+            <h3 class="text-center font-bold text-gray-400 tracking-[0.2em] mb-2">任務說明</h3>
+            
+            <div class="bg-white p-5 rounded-[20px] card-shadow flex items-start gap-4">
+                <div class="bg-hiwalk-blue/10 p-3 rounded-xl text-hiwalk-blue">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-1 text-hiwalk-text">門市對帳</h4>
+                    <p class="text-gray-500 text-sm">核對各店營收數據，細心即可。</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-5 rounded-[20px] card-shadow flex items-start gap-4">
+                <div class="bg-hiwalk-blue/10 p-3 rounded-xl text-hiwalk-blue">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-1 text-hiwalk-text">發票管理</h4>
+                    <p class="text-gray-500 text-sm">雲端彙整電子發票，操作超直覺。</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-5 rounded-[20px] card-shadow flex items-start gap-4">
+                <div class="bg-hiwalk-blue/10 p-3 rounded-xl text-hiwalk-blue">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-1 text-hiwalk-text">開銷核實</h4>
+                    <p class="text-gray-500 text-sm">比對食材採購單，就像對帳單一樣簡單。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Image Section -->
+    <section class="py-12 px-6 bg-white">
+        <div class="max-w-md mx-auto">
+            <div class="rounded-[24px] overflow-hidden shadow-2xl floating">
+                <img src="https://api.kuse.ai/api/folder/v1/file/a20421dad917db224610b13802a0e059417aa0c3887c8d327abeaea4a8c39568_3186923.png" alt="海邊走走品牌氛圍圖" class="w-full h-auto block">
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-12 px-6 bg-white">
+        <div class="max-w-md mx-auto">
+            <h3 class="text-center font-bold text-gray-400 tracking-[0.2em] mb-8">夢幻待遇與彈性</h3>
+            
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-hiwalk-sand p-6 rounded-[24px] text-center border border-hiwalk-blue/5">
+                    <p class="text-hiwalk-blue font-bold text-2xl mb-1">NT$250+</p>
+                    <p class="text-hiwalk-text text-sm font-bold">頂標時薪</p>
+                </div>
+                <div class="bg-hiwalk-sand p-6 rounded-[24px] text-center border border-hiwalk-blue/5">
+                    <p class="text-hiwalk-blue font-bold text-2xl mb-1">2 小時</p>
+                    <p class="text-hiwalk-text text-sm font-bold">每天任選</p>
+                </div>
+                <div class="bg-hiwalk-sand p-6 rounded-[24px] text-center border border-hiwalk-blue/5 col-span-2">
+                    <p class="text-hiwalk-blue font-bold text-xl mb-1">100% 在家辦公</p>
+                    <p class="text-hiwalk-text text-sm font-bold italic">「工作 2 小時，剩下的時間留給家人。」 ❤️</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values -->
+    <section class="py-12 px-6 bg-hiwalk-blue/5">
+        <div class="max-w-md mx-auto">
+            <h3 class="text-center font-bold text-hiwalk-blue mb-8">為什麼選擇這份職缺？</h3>
+            <ul class="space-y-4">
+                <li class="flex items-center gap-3 text-hiwalk-text">
+                    <span class="w-6 h-6 bg-hiwalk-blue rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                    <span class="font-medium">門檻超親民：具基本數字邏輯，新手也能上手</span>
+                </li>
+                <li class="flex items-center gap-3 text-hiwalk-text">
+                    <span class="w-6 h-6 bg-hiwalk-blue rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                    <span class="font-medium">時段隨你選：配合你的生活作息，不限時段</span>
+                </li>
+                <li class="flex items-center gap-3 text-hiwalk-text">
+                    <span class="w-6 h-6 bg-hiwalk-blue rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                    <span class="font-medium">效率即報酬：手腳快、準度高，挑戰時薪 $310</span>
+                </li>
+                <li class="flex items-center gap-3 text-hiwalk-text">
+                    <span class="w-6 h-6 bg-hiwalk-blue rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                    <span class="font-medium">履歷大加分：協助全台知名品牌，專業經驗更有型</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <footer class="py-20 px-6 text-center bg-white border-t border-gray-100">
+        <div class="max-w-md mx-auto">
+            <p class="text-xl font-bold text-hiwalk-text mb-2">想過自由生活？</p>
+            <p class="text-gray-500 mb-8">從掌控自己的時間開始。</p>
+            
+            <a href="https://lin.ee/9J4WP2T" class="cta-button inline-block text-white font-bold py-4 px-8 rounded-full text-lg w-full max-w-xs mb-12">
+                ❯ 我想試試！立即申請
+            </a>
+
+            <div class="mt-8 pt-8 border-t border-gray-50">
+                <a href="https://kuse.ai" class="kuse-branding" target="_blank">
+                    <span>made with</span>
+                    <svg viewBox="0,0,160,44" xmlns="http://www.w3.org/2000/svg"><path d="m.01,20.65C-.43,8.25,9.3-2.03,22.04.34,34.78,2.72,43.29,8.32,43.29,22.9s-8.66,19.01-22.03,20.3C7.9,44.5.46,33.05.01,20.65z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="m146.76,7.94c8.07,0,13.24,6.15,13.24,14.58v1.39h-20.75c.45,4.05,3.51,7.37,8.57,7.37,2.62,0,5.73-1.05,7.62-2.94l2.67,3.83c-2.67,2.55-6.62,3.88-10.9,3.88-8.07,0-14.08-5.6-14.08-14.08,0-7.76,5.67-14.02,13.63-14.02zm0,4.77c-5.01,0-7.29,3.83-7.57,7.1h15.13c-.11-3.16-2.28-7.1-7.57-7.1z" fill="currentColor"/><path d="m86.64,24.49c0,4.15,2.39,6.84,6.84,6.84,4.4,0,6.84-2.69,6.84-6.84V8.55h5.37v16.33c0,6.7-4.06,11.14-12.21,11.14-8.21,0-12.21-4.5-12.21-11.09V8.55h5.37v15.94zm32.99-16.55c4.49,0,8.06,1.47,10.6,3.86l-2.59,3.81c-2.05-2-5.28-3.08-8.06-3.08-2.88,0-4.84,1.37-4.84,3.32,0,1.91,2.64,2.54,5.81,3.27,4.59,1.08,10.26,2.4,10.26,8.46,0,4.94-3.76,8.41-11.14,8.41-4.98,0-8.94-1.76-11.24-4.11l2.54-4.11c1.86,1.91,5.18,3.67,8.84,3.67,3.91,0,5.57-1.66,5.57-3.62,0-2.3-2.88-2.98-6.21-3.76-4.54-1.08-9.87-2.3-9.87-8.06,0-4.5,4.2-8.06,10.31-8.06zM60.79,20.82,71.44,8.55h6.5L66.46,21.26,78.82,35.44h-6.5l-9.28-11.1-2.25,2.49v8.6h-5.33V8.55h5.33v12.27z" fill="currentColor"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.kuse.ai/sdk.prd.js"></script>
+    <script>
+        // Smooth reveal animation on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = `1`;
+                    entry.target.style.transform = `translateY(0)`;
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll(`.card-shadow, ul li, .bg-hiwalk-sand`).forEach(el => {
+            el.style.opacity = `0`;
+            el.style.transform = `translateY(20px)`;
+            el.style.transition = `all 0.6s ease-out`;
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html></html>
